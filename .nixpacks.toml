@@ -2,10 +2,16 @@
 packages = ["dotnet-sdk-6.0"]
 
 [phases.install]
-commands = ["cd src && dotnet restore --disable-parallel"]
+commands = [
+  "cd src",
+  "dotnet restore --disable-parallel"
+]
 
 [phases.build]
-commands = ["cd src && dotnet publish -c Release -o ../out"]
+commands = [
+  "cd src",
+  "dotnet publish -c Release -o ../out"
+]
 
 [phases.start]
 commands = ["dotnet out/GolfScoreBot.dll"]
