@@ -11,6 +11,12 @@ commands = [
 ]
 
 [phases.build]
+commands = [
+  "rm -rf bin obj",  # ensure no old artifacts
+  "dotnet publish -c Release -o out"
+]
+
+[phases.build]
 # Publish the project without --no-restore
 commands = [
   "dotnet publish -c Release -o out"
