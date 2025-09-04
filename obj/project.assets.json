@@ -942,6 +942,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Discord.Net >= 3.*",
+      "Discord.Net.Commands >= 3.*",
       "Google.Apis.Auth >= 1.70.0",
       "Google.Apis.Sheets.v4 >= 1.70.0.3819"
     ]
@@ -989,6 +990,10 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Discord.Net": {
+            "target": "Package",
+            "version": "[3.*, )"
+          },
+          "Discord.Net.Commands": {
             "target": "Package",
             "version": "[3.*, )"
           },

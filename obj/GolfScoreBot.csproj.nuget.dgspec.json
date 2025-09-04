@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[3.*, )"
             },
+            "Discord.Net.Commands": {
+              "target": "Package",
+              "version": "[3.*, )"
+            },
             "Google.Apis.Auth": {
               "target": "Package",
               "version": "[1.70.0, )"

@@ -65,8 +65,16 @@ class Program
     private void InitializeSheetsService()
     {
         string[] scopes = { SheetsService.Scope.SpreadsheetsReadonly };
+
+        string? json = Environment.GetEnvironmentVariable("GOOGLE_CREDENTIALS");
+        if (string.IsNullOrEmpty(json))
+        {
+            Console.WriteLine("❌ GOOGLE_CREDENTIALS environment variable is missing!");
+            return;
+        }
+
         GoogleCredential credential;
-        using (var stream = new FileStream("credentials.json", FileMode.Open, FileAccess.Read))
+        using (var stream = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(json)))
         {
             credential = GoogleCredential.FromStream(stream).CreateScoped(scopes);
         }
@@ -77,6 +85,7 @@ class Program
             ApplicationName = "GolfScoreBot"
         });
     }
+
 
     private async Task HandleMessageAsync(SocketMessage rawMessage)
     {
