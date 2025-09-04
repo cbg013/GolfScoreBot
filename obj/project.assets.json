@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
+    "net6.0": {
       "ClosedXML/0.105.0": {
         "type": "package",
         "dependencies": {
@@ -53,12 +53,12 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
         },
         "compile": {
-          "lib/net8.0/Discord.Net.Commands.dll": {
+          "lib/net6.0/Discord.Net.Commands.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Discord.Net.Commands.dll": {
+          "lib/net6.0/Discord.Net.Commands.dll": {
             "related": ".xml"
           }
         }
@@ -72,12 +72,12 @@
           "System.ValueTuple": "4.5.0"
         },
         "compile": {
-          "lib/net8.0/Discord.Net.Core.dll": {
+          "lib/net6.0/Discord.Net.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Discord.Net.Core.dll": {
+          "lib/net6.0/Discord.Net.Core.dll": {
             "related": ".xml"
           }
         }
@@ -92,12 +92,12 @@
           "System.Reactive": "6.0.1"
         },
         "compile": {
-          "lib/net8.0/Discord.Net.Interactions.dll": {
+          "lib/net6.0/Discord.Net.Interactions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Discord.Net.Interactions.dll": {
+          "lib/net6.0/Discord.Net.Interactions.dll": {
             "related": ".xml"
           }
         }
@@ -108,12 +108,12 @@
           "Discord.Net.Core": "3.18.0"
         },
         "compile": {
-          "lib/net8.0/Discord.Net.Rest.dll": {
+          "lib/net6.0/Discord.Net.Rest.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Discord.Net.Rest.dll": {
+          "lib/net6.0/Discord.Net.Rest.dll": {
             "related": ".xml"
           }
         }
@@ -125,12 +125,12 @@
           "Discord.Net.Rest": "3.18.0"
         },
         "compile": {
-          "lib/net8.0/Discord.Net.Webhook.dll": {
+          "lib/net6.0/Discord.Net.Webhook.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Discord.Net.Webhook.dll": {
+          "lib/net6.0/Discord.Net.Webhook.dll": {
             "related": ".xml"
           }
         }
@@ -142,12 +142,12 @@
           "Discord.Net.Rest": "3.18.0"
         },
         "compile": {
-          "lib/net8.0/Discord.Net.WebSocket.dll": {
+          "lib/net6.0/Discord.Net.WebSocket.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Discord.Net.WebSocket.dll": {
+          "lib/net6.0/Discord.Net.WebSocket.dll": {
             "related": ".xml"
           }
         }
@@ -158,12 +158,12 @@
           "DocumentFormat.OpenXml.Framework": "3.1.1"
         },
         "compile": {
-          "lib/net8.0/DocumentFormat.OpenXml.dll": {
+          "lib/netstandard2.0/DocumentFormat.OpenXml.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DocumentFormat.OpenXml.dll": {
+          "lib/netstandard2.0/DocumentFormat.OpenXml.dll": {
             "related": ".xml"
           }
         }
@@ -174,12 +174,12 @@
           "System.IO.Packaging": "8.0.1"
         },
         "compile": {
-          "lib/net8.0/DocumentFormat.OpenXml.Framework.dll": {
+          "lib/net6.0/DocumentFormat.OpenXml.Framework.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DocumentFormat.OpenXml.Framework.dll": {
+          "lib/net6.0/DocumentFormat.OpenXml.Framework.dll": {
             "related": ".xml"
           }
         }
@@ -280,12 +280,12 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -309,12 +309,12 @@
       "RBush.Signed/4.0.0": {
         "type": "package",
         "compile": {
-          "lib/net8.0/RBush.dll": {
+          "lib/netstandard2.0/RBush.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/RBush.dll": {
+          "lib/netstandard2.0/RBush.dll": {
             "related": ".xml"
           }
         }
@@ -335,12 +335,12 @@
       "System.CodeDom/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0/System.CodeDom.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0/System.CodeDom.dll": {
             "related": ".xml"
           }
         },
@@ -350,13 +350,16 @@
       },
       "System.Collections.Immutable/8.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
         "compile": {
-          "lib/net8.0/System.Collections.Immutable.dll": {
+          "lib/net6.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/System.Collections.Immutable.dll": {
+          "lib/net6.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
         },
@@ -383,12 +386,12 @@
       "System.IO.Packaging/8.0.1": {
         "type": "package",
         "compile": {
-          "lib/net8.0/System.IO.Packaging.dll": {
+          "lib/net6.0/System.IO.Packaging.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/System.IO.Packaging.dll": {
+          "lib/net6.0/System.IO.Packaging.dll": {
             "related": ".xml"
           }
         },
@@ -418,12 +421,12 @@
           "System.CodeDom": "7.0.0"
         },
         "compile": {
-          "lib/net7.0/System.Management.dll": {
+          "lib/net6.0/System.Management.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.Management.dll": {
+          "lib/net6.0/System.Management.dll": {
             "related": ".xml"
           }
         },
@@ -431,7 +434,7 @@
           "buildTransitive/net6.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net7.0/System.Management.dll": {
+          "runtimes/win/lib/net6.0/System.Management.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -451,6 +454,22 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "System.ValueTuple/4.5.0": {
@@ -1135,6 +1154,31 @@
         "system.reactive.nuspec"
       ]
     },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.ValueTuple/4.5.0": {
       "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
       "type": "package",
@@ -1181,7 +1225,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0": [
+    "net6.0": [
       "ClosedXML >= 0.105.0",
       "Discord.Net >= 3.*",
       "Google.Apis.Auth >= 1.70.0",
@@ -1204,14 +1248,14 @@
         "C:\\Users\\Chase\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net8.0"
+        "net6.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -1227,8 +1271,8 @@
       }
     },
     "frameworks": {
-      "net8.0": {
-        "targetAlias": "net8.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "ClosedXML": {
             "target": "Package",
@@ -1263,7 +1307,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413\\RuntimeIdentifierGraph.json"
       }
     }
   }
