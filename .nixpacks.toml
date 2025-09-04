@@ -1,29 +1,11 @@
-# .nixpacks.toml for GolfScoreBot
-
 [phases.setup]
-# Install .NET 6 SDK
 packages = ["dotnet-sdk-6.0"]
 
 [phases.install]
-# Restore NuGet packages
-commands = [
-  "dotnet restore --source https://api.nuget.org/v3/index.json --disable-parallel"
-]
+commands = ["cd src && dotnet restore --disable-parallel"]
 
 [phases.build]
-commands = [
-  "rm -rf bin obj",  # ensure no old artifacts
-  "dotnet publish -c Release -o out"
-]
-
-[phases.build]
-# Publish the project without --no-restore
-commands = [
-  "dotnet publish -c Release -o out"
-]
+commands = ["cd src && dotnet publish -c Release -o ../out"]
 
 [phases.start]
-# Start the bot from the published output
-commands = [
-  "dotnet out/GolfScoreBot.dll"
-]
+commands = ["dotnet out/GolfScoreBot.dll"]
