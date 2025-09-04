@@ -1,17 +1,16 @@
-[phases.setup]
-packages = ["dotnet-sdk-6.0"]
+[build]
+# .NET SDK version
+dotnet-version = "6.0"
 
-[phases.install]
-commands = [
-  "cd src",
-  "dotnet restore --disable-parallel"
-]
+[install]
+# Dependencies to restore
+packages = []
 
-[phases.build]
-commands = [
-  "cd src",
-  "dotnet publish -c Release -o ../out"
-]
+[build.commands]
+# Restore and publish the project
+restore = "dotnet restore"
+publish = "dotnet publish -c Release -o out"
 
-[phases.start]
-commands = ["dotnet out/GolfScoreBot.dll"]
+[start]
+# Start the bot from the published output
+command = "./out/GolfScoreBot"
