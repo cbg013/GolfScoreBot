@@ -1,0 +1,15 @@
+# Ignore build output
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore Excel score sheets if created
+*.xlsx
+
+# Ignore VSCode settings if you don’t want them in repo
+.vscode/
