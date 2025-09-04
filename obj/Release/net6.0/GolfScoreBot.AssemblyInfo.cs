@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GolfScoreBot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+395eb4ed2025503d46dfc073e2eb84b74f051325")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c24a72cf320c27917b847a56493cbb528408cd8a")]
 [assembly: System.Reflection.AssemblyProductAttribute("GolfScoreBot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GolfScoreBot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

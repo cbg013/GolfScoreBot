@@ -43,10 +43,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ClosedXML": {
-              "target": "Package",
-              "version": "[0.105.0, )"
-            },
             "Discord.Net": {
               "target": "Package",
               "version": "[3.*, )"
